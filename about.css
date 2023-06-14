@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+html,
+body {
+    background-color: #11202e;
+}
+
+body {
+    background-color: #11202e;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    overflow: visible;
+}
+
+#heading {
+    margin: 30px;
+    height: 100px;
+}
+
+#heading span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#heading span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+#heading span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+#heading span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+#heading span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+#heading span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+#heading span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+#heading span:nth-child(8) {
+    animation-delay: .7s;
+}
+
+#heading span:nth-child(9) {
+    animation-delay: .8s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.image {
+    padding: 50px;
+    float: right;
+}
+
+.image img {
+    border: 5px solid white;
+    border-radius: 50px;
+    height: 300px;
+    width: 300px;
+    margin-top: -100px;
+}
+
+.image img:hover {
+    border-radius: 500px;
+    transform: scale(1.25);
+    transition: transform 0.5s ease-in-out;
+}
+
+#aboutme {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 500px;
+}
+
+a {
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+hr {
+    width: 100%;
+    color: #11202e;
+    border: 2px solid #11202e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Skills */
+
+.box {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #132231;
+    height: 320px;
+    width: 240px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.box svg {
+    width: 150px
+}
+
+svg circle {
+    fill: none;
+    stroke: #ff0;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220
+}
+
+.box .box_name {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+.box .box_percent {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: relative;
+    top: -90px;
+    font-size: 20px
+}
+
+.box .box_marg {
+    background-color: #000;
+    border-radius: 20px;
+    font-size: 1.5em;
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.box .box_marg i {
+    margin: 10px
+}
+
+.box_circle {
+    stroke-dasharray: 440
+}
+
+.box_group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
